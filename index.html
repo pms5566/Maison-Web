@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Maison Noir | Exquisite Fine Dining & Sommelier Pairings</title>
+  <meta name="description" content="Immerse yourself in a luxurious gold & cream gastronomic experience at Maison Noir. Explore our seasonal signature tasting menus, sommelier reserves, and private dining rooms.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       Header & Navigation
+       ========================================================================== -->
+  <header class="header-nav" id="header">
+    <div class="container nav-container">
+      <a href="#hero" class="logo-wrapper" id="nav-logo">
+        <h1 class="logo">Maison Noir</h1>
+        <span class="logo-sub">Haute Cuisine</span>
+      </a>
+
+      <!-- Desktop Links -->
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="#about" class="nav-link">Philosophy</a>
+        <a href="#tasting-menu" class="nav-link">Tasting Menus</a>
+        <a href="#chefs" class="nav-link">Our Chefs</a>
+        <a href="#private-dining" class="nav-link">Private Dining</a>
+        <a href="#wine-cellar" class="nav-link">Wine Cellar</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+      </nav>
+
+      <!-- Book CTA -->
+      <div class="nav-cta">
+        <a href="#reservations" class="btn btn-outline" id="nav-book-btn">Book a Table</a>
+      </div>
+
+      <!-- Hamburger Menu Icon -->
+      <button class="menu-toggle" id="mobile-menu-toggle" aria-label="Toggle Mobile Menu" aria-controls="mobile-nav-overlay" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile Overlay Menu -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay" aria-hidden="true">
+    <div class="mobile-links">
+      <a href="#about" class="mobile-link" onclick="toggleMobileMenu()">Philosophy</a>
+      <a href="#tasting-menu" class="mobile-link" onclick="toggleMobileMenu()">Tasting Menus</a>
+      <a href="#chefs" class="mobile-link" onclick="toggleMobileMenu()">Our Chefs</a>
+      <a href="#private-dining" class="mobile-link" onclick="toggleMobileMenu()">Private Dining</a>
+      <a href="#wine-cellar" class="mobile-link" onclick="toggleMobileMenu()">Wine Cellar</a>
+      <a href="#gallery" class="mobile-link" onclick="toggleMobileMenu()">Gallery</a>
+      <a href="#reservations" class="btn btn-gold" style="margin-top: 1rem;" onclick="toggleMobileMenu()">Book a Table</a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Hero Section
+       ========================================================================== -->
+  <section id="hero">
+    <div class="hero-bg-wrapper">
+      <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1920&q=80" alt="Exquisite gold-leaf fine dining plate" class="hero-bg" loading="eager">
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-stars" aria-label="Three Michelin Stars">
+        <!-- SVG Michelin Star Icons -->
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+      </div>
+      <span class="hero-tagline">Three Michelin Stars</span>
+      <h2 class="hero-title">Culinary Poetry <span>In Gold & Cream</span></h2>
+      <p class="hero-description">Welcome to Maison Noir, where classical French culinary heritage harmonizes with avant-garde gold-leaf artistry and curated master sommelier reserves.</p>
+      <div class="hero-actions">
+        <a href="#reservations" class="btn btn-gold">Secure a Salon</a>
+        <a href="#tasting-menu" class="btn btn-outline-white">Explore Tasting Menus</a>
+      </div>
+    </div>
+    <div class="scroll-indicator" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})">
+      <span>Discover</span>
+      <div class="mouse-icon">
+        <div class="mouse-wheel"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Culinary Philosophy (About Section)
+       ========================================================================== -->
+  <section id="about" class="section-padding reveal-item">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <span class="section-subtitle">Heritage & Vision</span>
+            <h2 class="section-title" style="font-size: 3rem; text-align: left;">Maison Noir Philosophy</h2>
+            <div class="section-divider" style="justify-content: flex-start;">
+              <span class="star">✦</span>
+            </div>
+          </div>
+          <p>At Maison Noir, we view fine dining as a fully sensory experience. Rooted in the rich culinary heritage of classical France, our kitchens are laboratories of luxury, crafting dishes that taste like fine art and feel like rare poetry.</p>
+          <p>Every element in our gilded dining salon has been selected to evoke wonder—from the bespoke gold-trimmed porcelain to our locally harvested organic produce and our collection of exceptionally rare, historic vintages curated in secrecy.</p>
+          <blockquote class="about-quote">
+            "To dine is to dream awake. We create temporary art that exists only in your memory, elevated by pure champagne hues."
+          </blockquote>
+          <div class="about-signature">
+            <div>
+              <div class="name">Jean-Luc Noir</div>
+              <div class="title">Chef de Cuisine & Founder</div>
+            </div>
+            <div class="signature-text" style="font-family: 'Cormorant Garamond', serif; font-size: 2.2rem; font-style: italic; color: var(--color-gold-dark); transform: rotate(-5deg); margin-left: 2rem; user-select: none;">J.L. Noir</div>
+          </div>
+        </div>
+        
+        <div class="about-visuals">
+          <div class="about-img-main">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=1000&q=80" alt="Bespoke luxury table setting at Maison Noir" loading="lazy">
+          </div>
+          <div class="about-img-secondary">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?auto=format&fit=crop&w=800&q=80" alt="Chef plating luxurious dish with fine gold dust" loading="lazy">
+          </div>
+          <div class="about-stamp">
+            <span>Est. 2012<br>Paris — NY</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Tasting Menu Section (Tabbed Layout)
+       ========================================================================== -->
+  <section id="tasting-menu" class="section-padding reveal-item">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Gastronomic Voyages</span>
+        <h2 class="section-title">The Tasting Menus</h2>
+        <div class="section-divider">
+          <span class="star">✦</span>
+        </div>
+      </div>
+
+      <!-- Menu Tabs Selection -->
+      <div class="menu-tabs-wrapper" role="tablist" aria-label="Tasting Menu Categories">
+        <button class="menu-tab-btn active" role="tab" aria-selected="true" aria-controls="pane-voyage" id="tab-voyage">Le Voyage (Signature)</button>
+        <button class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="pane-terre" id="tab-terre">La Terre (Vegetarian)</button>
+        <button class="menu-tab-btn" role="tab" aria-selected="false" aria-controls="pane-mer" id="tab-mer">La Mer (Seafood)</button>
+      </div>
+
+      <!-- Tasting Menu Panes -->
+      <div class="menu-content-panes">
+        <!-- PANE 1: Le Voyage -->
+        <div class="menu-pane active" id="pane-voyage" role="tabpanel" aria-labelledby="tab-voyage">
+          <div class="menu-pane-visual">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=1000&q=80" alt="Exquisite signature gold-leaf beef tenderloin" loading="lazy">
+          </div>
+          <div class="menu-pane-details">
+            <div class="menu-pane-header">
+              <h3 class="menu-pane-title">Le Voyage</h3>
+              <div class="menu-pane-meta">
+                <span class="menu-price">$345 per guest</span>
+                <span class="menu-pairing-price">Sommelier Pairing +$195</span>
+              </div>
+            </div>
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Oyster & Champagne Caviar</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Starter</span>
+                </div>
+                <p class="menu-item-desc">Freshly harvested Brittany oysters capped with custom champagne-infused golden caviar beads.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Black Truffle Foie Gras Royale</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Entrée</span>
+                </div>
+                <p class="menu-item-desc">Velvety slow-poached goose foie gras topped with sliced Perigord black truffle and a light gold-leaf glaze.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">A5 Miyazaki Wagyu & Smoked Bone Marrow</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Mains</span>
+                </div>
+                <p class="menu-item-desc">Seared Miyazaki wagyu beef accompanied by gold-infused parsnip puree and rich roasted bone marrow reduction.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">The Golden Hazelnut Sphere</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Dessert</span>
+                </div>
+                <p class="menu-item-desc">Master Pastry Chef's signature edible dark chocolate orb, shattered table-side to reveal gold praline mousse.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 2: La Terre -->
+        <div class="menu-pane" id="pane-terre" role="tabpanel" aria-labelledby="tab-terre">
+          <div class="menu-pane-visual">
+            <img src="https://images.unsplash.com/photo-1540189549336-e6e99c3679fe?auto=format&fit=crop&w=1000&q=80" alt="Artisan gold-leaf organic heirloom salad" loading="lazy">
+          </div>
+          <div class="menu-pane-details">
+            <div class="menu-pane-header">
+              <h3 class="menu-pane-title">La Terre</h3>
+              <div class="menu-pane-meta">
+                <span class="menu-price">$295 per guest</span>
+                <span class="menu-pairing-price">Artisanal Elixir Pairing +$140</span>
+              </div>
+            </div>
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Heirloom Carrot & Gold Velvet</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Starter</span>
+                </div>
+                <p class="menu-item-desc">Roasted multi-colored local carrots draped in an exceptionally creamy cream-and-saffron emulsion.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Morel Mushroom Chawanmushi</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Entrée</span>
+                </div>
+                <p class="menu-item-desc">Savory steamed cream custard flavored with wild foraged morel mushrooms and wild gold onion dust.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Golden Beetroot & Truffle Agnolotti</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Mains</span>
+                </div>
+                <p class="menu-item-desc">Handmade micro-pasta stuffed with organic cream cheese, sweet gold beets, and finished with fresh truffle shavings.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Wild Berries & Champagne Snow</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Dessert</span>
+                </div>
+                <p class="menu-item-desc">Frozen elderflower and champagne granite resting on a bed of fresh forest berries and edible organic gold paper.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANE 3: La Mer -->
+        <div class="menu-pane" id="pane-mer" role="tabpanel" aria-labelledby="tab-mer">
+          <div class="menu-pane-visual">
+            <img src="https://images.unsplash.com/photo-1519708227418-c8fd9a32b7a2?auto=format&fit=crop&w=1000&q=80" alt="Pan-seared sea bass over gold saffron broth" loading="lazy">
+          </div>
+          <div class="menu-pane-details">
+            <div class="menu-pane-header">
+              <h3 class="menu-pane-title">La Mer</h3>
+              <div class="menu-pane-meta">
+                <span class="menu-price">$325 per guest</span>
+                <span class="menu-pairing-price">Vintage White Reserve Pairing +$175</span>
+              </div>
+            </div>
+            <div class="menu-items-list">
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Gilded Scallop Crudo</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Starter</span>
+                </div>
+                <p class="menu-item-desc">Thinly sliced Hokkaido sea scallops served with blood orange reduction, micro-dill, and edible gold flakes.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Slow-Braised Blue Lobster</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Entrée</span>
+                </div>
+                <p class="menu-item-desc">Tender claw and tail of Brittany blue lobster poached gently in salted gold-leaf butter, finished with sweet sea-urchin cream.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Turbot de Ligne & Saffron Velvet</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Mains</span>
+                </div>
+                <p class="menu-item-desc">Line-caught wild Atlantic turbot roasted on the bone, presented with rich saffron butter sauce and glazed gold asparagus.</p>
+              </div>
+              <div class="menu-item">
+                <div class="menu-item-row">
+                  <span class="menu-item-name">Citrus Kelp & White Chocolate</span>
+                  <span class="menu-item-dots"></span>
+                  <span class="menu-item-tag">Dessert</span>
+                </div>
+                <p class="menu-item-desc">Creamy white chocolate ganache accompanied by crisp candied kelp fragments and sparkling gold lemon gel.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Chef Profiles Section (Interactive Cards)
+       ========================================================================== -->
+  <section id="chefs" class="section-padding reveal-item">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">The Culinary Visionaries</span>
+        <h2 class="section-title">The Culinary Artisans</h2>
+        <div class="section-divider">
+          <span class="star">✦</span>
+        </div>
+      </div>
+
+      <div class="chefs-grid">
+        <!-- Chef 1 -->
+        <div class="chef-card">
+          <div class="chef-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1577219491135-ce391730fb2c?auto=format&fit=crop&w=600&q=80" alt="Executive Chef Jean-Luc Noir" class="chef-img" loading="lazy">
+            <div class="chef-overlay-gradient"></div>
+          </div>
+          <div class="chef-content">
+            <span class="chef-role">Founder / Executive Chef</span>
+            <h3 class="chef-name">Jean-Luc Noir</h3>
+            <p class="chef-bio">With over twenty years in legendary Parisian kitchens, Chef Jean-Luc blends architectural design principles with modern culinary sciences to reinvent fine dining classics.</p>
+            <div class="chef-socials">
+              <a href="#" class="chef-social-link" aria-label="Jean-Luc Noir Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+              <a href="#" class="chef-social-link" aria-label="Jean-Luc Noir Twitter">
+                <svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chef 2 -->
+        <div class="chef-card">
+          <div class="chef-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=600&q=80" alt="Master Pastry Chef Elise Gold" class="chef-img" loading="lazy">
+            <div class="chef-overlay-gradient"></div>
+          </div>
+          <div class="chef-content">
+            <span class="chef-role">Master Pastry Chef</span>
+            <h3 class="chef-name">Elise Gold</h3>
+            <p class="chef-bio">Elise elevates dessert curation into sculptural physics. Her famous gold praline shells and sugar sculptures are highly coveted across the global gastronomy map.</p>
+            <div class="chef-socials">
+              <a href="#" class="chef-social-link" aria-label="Elise Gold Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chef 3 -->
+        <div class="chef-card">
+          <div class="chef-img-wrapper">
+            <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=600&q=80" alt="Head Sommelier Arthur Rose" class="chef-img" loading="lazy">
+            <div class="chef-overlay-gradient"></div>
+          </div>
+          <div class="chef-content">
+            <span class="chef-role">Master Sommelier</span>
+            <h3 class="chef-name">Arthur Rose</h3>
+            <p class="chef-bio">Arthur stewards our award-winning wine program, tracking rare vintage labels from Bordeaux, Burgundy, and Champagne to build matches that evoke sheer dining bliss.</p>
+            <div class="chef-socials">
+              <a href="#" class="chef-social-link" aria-label="Arthur Rose Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Private Dining Section
+       ========================================================================== -->
+  <section id="private-dining" class="section-padding reveal-item">
+    <div class="private-dining-bg">
+      <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Private luxury dining room with warm golden chandelier" loading="lazy">
+    </div>
+    <div class="container">
+      <div class="private-dining-content">
+        <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+          <span class="section-subtitle">Exclusive Salons</span>
+          <h2 class="section-title">Private Soirées</h2>
+          <div class="section-divider" style="justify-content: flex-start;">
+            <span class="star">✦</span>
+          </div>
+        </div>
+        <p class="private-dining-text">Experience ultimate luxury in our custom Private Salons. Designed with premium soundproofing, majestic gold-gilded artwork, and soft warm lighting, these exclusive spaces provide an intimate atmosphere for high-profile client meetings, anniversaries, or private celebrations.</p>
+        
+        <div class="private-dining-amenities">
+          <!-- Amenity 1 -->
+          <div class="amenity-item">
+            <div class="amenity-icon">
+              <!-- SVG Diamond Icon -->
+              <svg viewBox="0 0 24 24"><path d="M12 2L2 12l10 10 10-10L12 2zm0 3.65L18.35 12 12 18.35 5.65 12 12 5.65z"/></svg>
+            </div>
+            <div>
+              <h3 class="amenity-title">Tailored Menus</h3>
+              <p class="amenity-desc">Custom-tailored tasting menu formats engineered in collaboration with Chef Jean-Luc.</p>
+            </div>
+          </div>
+          <!-- Amenity 2 -->
+          <div class="amenity-item">
+            <div class="amenity-icon">
+              <!-- SVG Sommelier Glass Icon -->
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.69 2 6 4.69 6 8c0 2.92 2.11 5.36 4.88 5.91V19H9c-.55 0-1 .45-1 1v2h8v-2c0-.55-.45-1-1-1h-1.88v-5.09C15.89 13.36 18 10.92 18 8c0-3.31-2.69-6-6-6zm0 10c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+            </div>
+            <div>
+              <h3 class="amenity-title">Private Sommelier</h3>
+              <p class="amenity-desc">Dedicated sommeliers mapping historic reserve labels and champagne pourings exclusively for your table.</p>
+            </div>
+          </div>
+          <!-- Amenity 3 -->
+          <div class="amenity-item">
+            <div class="amenity-icon">
+              <!-- SVG Users Group Icon -->
+              <svg viewBox="0 0 24 24"><path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5s-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/></svg>
+            </div>
+            <div>
+              <h3 class="amenity-title">Intimate Salons</h3>
+              <p class="amenity-desc">A choice of three custom salons with flexible capacities hosting from 6 up to 24 distinguished guests.</p>
+            </div>
+          </div>
+          <!-- Amenity 4 -->
+          <div class="amenity-item">
+            <div class="amenity-icon">
+              <!-- SVG Audio/Visual Icon -->
+              <svg viewBox="0 0 24 24"><path d="M21 3H3c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h5v2h8v-2h5c1.1 0 1.99-.9 1.99-2L23 5c0-1.1-.9-2-2-2zm0 14H3V5h18v12z"/></svg>
+            </div>
+            <div>
+              <h3 class="amenity-title">Smart Infrastructure</h3>
+              <p class="amenity-desc">Discreetly integrated audio-visual technology and secure custom high-speed network nodes.</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#reservations" class="btn btn-gold-light" style="font-weight: 600;">Reserve Private Salon</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Wine & Cellar Section
+       ========================================================================== -->
+  <section id="wine-cellar" class="section-padding reveal-item">
+    <div class="container">
+      <div class="wine-grid">
+        <div class="wine-showcase-visual">
+          <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=1000&q=80" alt="Bespoke luxury wine rack inside the secret cellar of Maison Noir" loading="lazy">
+        </div>
+        <div class="wine-details">
+          <div class="section-header" style="text-align: left; margin-bottom: 2rem;">
+            <span class="section-subtitle">Aged Vintages</span>
+            <h2 class="section-title" style="font-size: 3rem; text-align: left;">The Liquid Gold</h2>
+            <div class="section-divider" style="justify-content: flex-start;">
+              <span class="star">✦</span>
+            </div>
+          </div>
+          <p>Guided by Master Sommelier Arthur Rose, the wine program at Maison Noir is a love letter to the global wine regions. Deep below our dining salon lies an exceptional vault preserving over eighteen thousand bottles, featuring historic labels and custom grower champagnes selected in absolute secrecy.</p>
+          <p>Every bottle is treated as a living artifact, decanted with utmost care and matched carefully with your selection of signatures to achieve a rare, unforgettable taste symphony.</p>
+          
+          <div class="wine-stats">
+            <div class="wine-stat">
+              <div class="wine-stat-num">18k+</div>
+              <div class="wine-stat-label">Rare Bottles</div>
+            </div>
+            <div class="wine-stat">
+              <div class="wine-stat-num">750+</div>
+              <div class="wine-stat-label">Champagne Labels</div>
+            </div>
+            <div class="wine-stat">
+              <div class="wine-stat-num">1896</div>
+              <div class="wine-stat-label">Oldest Vintage</div>
+            </div>
+          </div>
+          
+          <a href="#reservations" class="btn btn-outline" style="font-weight: 600;">Sommelier Reservation</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Gallery Section (Responsive Masonry Image Grid)
+       ========================================================================== -->
+  <section id="gallery" class="section-padding reveal-item">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Visual Symphonies</span>
+        <h2 class="section-title">The Gallery</h2>
+        <div class="section-divider">
+          <span class="star">✦</span>
+        </div>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Item 1 (Wide Appetizer) -->
+        <div class="gallery-item gallery-col-5 gallery-row-2" onclick="openLightbox(this)" data-title="Caviar Plating" data-category="Entrée" data-src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=600&q=80" alt="Beautiful fresh plating detail" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Entrée</span>
+            <h4 class="gallery-title">Caviar Plating</h4>
+          </div>
+        </div>
+
+        <!-- Item 2 (Standard Tall Dessert) -->
+        <div class="gallery-item gallery-col-3 gallery-row-2" onclick="openLightbox(this)" data-title="Gold Praline Mousse" data-category="Desserts" data-src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=600&q=80" alt="Bespoke dessert sculpture" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Desserts</span>
+            <h4 class="gallery-title">Gold Praline Mousse</h4>
+          </div>
+        </div>
+
+        <!-- Item 3 (Wide Chef Plate) -->
+        <div class="gallery-item gallery-col-4 gallery-row-1" onclick="openLightbox(this)" data-title="Chef Plating detail" data-category="Artisan Works" data-src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1484723091739-30a097e8f929?auto=format&fit=crop&w=600&q=80" alt="Culinary art preparation close up" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Artisan Works</span>
+            <h4 class="gallery-title">Plating Detail</h4>
+          </div>
+        </div>
+
+        <!-- Item 4 (Seafood Plate) -->
+        <div class="gallery-item gallery-col-4 gallery-row-1" onclick="openLightbox(this)" data-title="Seafood Saffron Velvet" data-category="Seafood reserves" data-src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?auto=format&fit=crop&w=600&q=80" alt="Exquisite fine dining seafood saffron broth" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Seafood Reserves</span>
+            <h4 class="gallery-title">Seafood Saffron Velvet</h4>
+          </div>
+        </div>
+
+        <!-- Item 5 (Gilded Table Details) -->
+        <div class="gallery-item gallery-col-7 gallery-row-2" onclick="openLightbox(this)" data-title="Bespoke Gold Glassware" data-category="Ambiance" data-src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?auto=format&fit=crop&w=600&q=80" alt="Elegant glassware on standard tables" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Ambiance</span>
+            <h4 class="gallery-title">Gilded Glassware</h4>
+          </div>
+        </div>
+
+        <!-- Item 6 (Sommelier Selection) -->
+        <div class="gallery-item gallery-col-5 gallery-row-2" onclick="openLightbox(this)" data-title="The Secret Plating Craft" data-category="Culinary Craft" data-src="https://images.unsplash.com/photo-1574969884448-fe5bce3d0d51?auto=format&fit=crop&w=1200&q=80">
+          <img src="https://images.unsplash.com/photo-1574969884448-fe5bce3d0d51?auto=format&fit=crop&w=600&q=80" alt="Sommelier plating masterfully" loading="lazy">
+          <div class="gallery-hover">
+            <div class="gallery-hover-icon">
+              <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+            </div>
+            <span class="gallery-category">Culinary Craft</span>
+            <h4 class="gallery-title">The Fineness of Plating</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Lightbox Modal -->
+  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Image Lightbox Display">
+    <button class="lightbox-close" id="lightbox-close-btn" aria-label="Close Lightbox">
+      <!-- SVG Close Cross Icon -->
+      <svg viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" class="lightbox-img" id="lightbox-img">
+      <div class="lightbox-caption">
+        <h4 class="lightbox-caption-title" id="lightbox-caption-text">Image Detail</h4>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       Reservation Form Section
+       ========================================================================== -->
+  <section id="reservations" class="section-padding reveal-item">
+    <div class="container reservations-container">
+      <div class="section-header">
+        <span class="section-subtitle">Secure Your Presence</span>
+        <h2 class="section-title">Table Reservations</h2>
+        <div class="section-divider">
+          <span class="star">✦</span>
+        </div>
+      </div>
+
+      <!-- Main Interactive Panel -->
+      <div class="glass-panel reservation-form-panel">
+        
+        <!-- Form Pane (Default state) -->
+        <form class="reservation-form" id="booking-form" novalidate>
+          
+          <!-- Name Input -->
+          <div class="form-group">
+            <label for="booking-name" class="form-label">Full Name</label>
+            <input type="text" id="booking-name" class="form-input" placeholder="e.g. Baron Charles" required>
+          </div>
+
+          <!-- Email Input -->
+          <div class="form-group">
+            <label for="booking-email" class="form-label">Email Address</label>
+            <input type="email" id="booking-email" class="form-input" placeholder="e.g. charles@chateau.com" required>
+          </div>
+
+          <!-- Guests Count -->
+          <div class="form-group">
+            <label for="booking-guests" class="form-label">Number of Guests</label>
+            <select id="booking-guests" class="form-input" required>
+              <option value="" disabled selected>Select dining guests...</option>
+              <option value="1 Guest">1 Guest</option>
+              <option value="2 Guests">2 Guests</option>
+              <option value="3 Guests">3 Guests</option>
+              <option value="4 Guests">4 Guests</option>
+              <option value="5 Guests">5 Guests</option>
+              <option value="6 Guests">6 Guests</option>
+              <option value="7+ Guests (Requires Salon)">7+ Guests (Requires Salon)</option>
+            </select>
+          </div>
+
+          <!-- Phone Number -->
+          <div class="form-group">
+            <label for="booking-phone" class="form-label">Contact Number</label>
+            <input type="tel" id="booking-phone" class="form-input" placeholder="e.g. +1 (555) 123-4567" required>
+          </div>
+
+          <!-- Date Selector -->
+          <div class="form-group">
+            <label for="booking-date" class="form-label">Dining Date</label>
+            <input type="date" id="booking-date" class="form-input" required>
+          </div>
+
+          <!-- Time Slot Selector -->
+          <div class="form-group">
+            <label for="booking-time" class="form-label">Preferred Hour</label>
+            <select id="booking-time" class="form-input" required>
+              <option value="" disabled selected>Select seat slot...</option>
+              <option value="5:30 PM">5:30 PM (Sunset Seating)</option>
+              <option value="6:00 PM">6:00 PM</option>
+              <option value="7:15 PM">7:15 PM (Grand Seating)</option>
+              <option value="8:00 PM">8:00 PM</option>
+              <option value="9:30 PM">9:30 PM (Late-night Seating)</option>
+            </select>
+          </div>
+
+          <!-- Dietary / Comments -->
+          <div class="form-group-full">
+            <label for="booking-notes" class="form-label">Dietary Preferences & Special Requests</label>
+            <textarea id="booking-notes" class="form-input" placeholder="e.g. Shellfish allergies, celebrating anniversary, high-table requested..."></textarea>
+          </div>
+
+          <!-- Submit CTA -->
+          <div class="reservation-submit-wrapper">
+            <button type="submit" class="btn btn-gold" id="booking-submit-btn">
+              <span class="spinner"></span>
+              <span>Confirm Reservation Request</span>
+            </button>
+            <p class="reservation-disclaimer">Please note: Table reservations are processed and confirmed by our Master Maitre D' via email within twenty-four hours.</p>
+          </div>
+        </form>
+
+        <!-- Success Feedback Pane (Hidden initially) -->
+        <div class="reservation-success-pane" id="booking-success-pane">
+          <div class="success-icon-wrapper">
+            <!-- SVG Gold Checkmark Icon -->
+            <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+          </div>
+          <h3 class="success-title">Salon Reserved</h3>
+          <p class="success-msg">Your reservation request at Maison Noir has been logged into our books. A culinary host will reach out to your contact details shortly to finalize the menu selection.</p>
+          
+          <div class="success-details">
+            <div class="success-detail-item">
+              <span class="success-detail-label">Guests</span>
+              <span class="success-detail-val" id="summary-guests">2 Guests</span>
+            </div>
+            <div class="success-detail-item">
+              <span class="success-detail-label">Date</span>
+              <span class="success-detail-val" id="summary-date">07.12.2026</span>
+            </div>
+            <div class="success-detail-item">
+              <span class="success-detail-label">Time</span>
+              <span class="success-detail-val" id="summary-time">7:15 PM</span>
+            </div>
+          </div>
+
+          <button class="btn btn-outline" onclick="resetBookingForm()">Reserve Another Table</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       Footer Section
+       ========================================================================== -->
+  <footer>
+    <div class="container">
+      <div class="footer-top">
+        <!-- Col 1: About & Stars -->
+        <div class="footer-about">
+          <div class="logo-wrapper">
+            <h4 class="logo">Maison Noir</h4>
+            <span class="logo-sub">Haute Cuisine</span>
+          </div>
+          <p class="footer-desc">Where classical French culinary heritage harmonizes with avant-garde gold-leaf artistry and curated master sommelier reserves.</p>
+          <div class="michelin-stars-badge" aria-label="Three Michelin Stars Award">
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+            <svg viewBox="0 0 24 24"><path d="M12 .587l3.668 7.431 8.2 1.192-5.934 5.787 1.4 8.168L12 18.896l-7.334 3.857 1.4-8.168L.132 9.21l8.2-1.192z"/></svg>
+            <span class="michelin-text">Michelin Guide Excellence</span>
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div>
+          <h4 class="footer-col-title">Navigation</h4>
+          <ul class="footer-links">
+            <li class="footer-info-item">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              <a href="#about">Our Philosophy</a>
+            </li>
+            <li class="footer-info-item">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              <a href="#tasting-menu">Signature Tasting Menus</a>
+            </li>
+            <li class="footer-info-item">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              <a href="#chefs">Culinary Artisans</a>
+            </li>
+            <li class="footer-info-item">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              <a href="#private-dining">Private Event Salons</a>
+            </li>
+            <li class="footer-info-item">
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+              <a href="#wine-cellar">The Wine Cellar Reserves</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Hours & Operations -->
+        <div>
+          <h4 class="footer-col-title">Dining Hours</h4>
+          <div>
+            <div class="footer-hours-row">
+              <span class="footer-hours-day">Tuesday – Thursday</span>
+              <span>5:30 PM – 10:30 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span class="footer-hours-day">Friday – Saturday</span>
+              <span>5:00 PM – 11:30 PM</span>
+            </div>
+            <div class="footer-hours-row">
+              <span class="footer-hours-day">Sunday – Monday</span>
+              <span class="text-gold">Closed for Cellar Restock</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Col 4: Location & Contact & Newsletter -->
+        <div>
+          <h4 class="footer-col-title">Location</h4>
+          <ul class="footer-links" style="gap: 1.25rem; margin-bottom: 1.5rem;">
+            <li class="footer-info-item">
+              <!-- SVG Pin Icon -->
+              <svg viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+              <span>45 Rue de l'Étoile, Paris /<br>12 East 57th St, New York</span>
+            </li>
+            <li class="footer-info-item">
+              <!-- SVG Phone Icon -->
+              <svg viewBox="0 0 24 24"><path d="M20.01 15.38c-1.23 0-2.42-.2-3.53-.57a.97.97 0 00-1.01.24l-2.2 2.2a15.045 15.045 0 01-6.59-6.59l2.2-2.2c.28-.28.36-.67.25-1.02A11.36 11.36 0 018.5 3.7c0-.55-.45-1-1-1H3.5c-.55 0-1 .45-1 1 0 9.39 7.61 17 17 17 .55 0 1-.45 1-1v-3.5c0-.55-.45-1-1-1z"/></svg>
+              <a href="tel:+15550192">+1 (555) 019-2830</a>
+            </li>
+            <li class="footer-info-item">
+              <!-- SVG Envelope Icon -->
+              <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+              <a href="mailto:concierge@maisonnoir.com">concierge@maisonnoir.com</a>
+            </li>
+          </ul>
+
+          <span class="form-label" style="color: var(--color-white); margin-bottom: 0.5rem; font-size: 0.7rem;">Subscribe to Circulars</span>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our luxury updates.'); this.reset();">
+            <input type="email" class="newsletter-input" placeholder="Enter email address" required aria-label="Newsletter email address">
+            <button type="submit" class="newsletter-submit-btn" aria-label="Submit newsletter subscription">
+              <!-- SVG Arrow Right -->
+              <svg viewBox="0 0 24 24"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <!-- Footer Bottom -->
+      <div class="footer-bottom">
+        <span class="copyright">© 2026 Maison Noir. All luxury rights reserved.</span>
+        
+        <div class="footer-social-links">
+          <a href="#" class="footer-social-link" aria-label="Maison Noir Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Maison Noir Twitter">
+            <svg viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+          </a>
+          <a href="#" class="footer-social-link" aria-label="Maison Noir Facebook">
+            <svg viewBox="0 0 24 24"><path d="M9 8H7v3h2v9h4v-9h3.613L17 8h-4V6.992C13 6.136 13.25 5 15 5h2V1.5C16.48 1.44 14.84 1 13.5 1 10.16 1 8 3.19 8 7v1h1z"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
